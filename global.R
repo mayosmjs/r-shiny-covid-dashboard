@@ -18,10 +18,10 @@ hopkinsGithubData <- function() {
     destfile = "data/covid19_data.zip"
   )
   
-  data_path <- "COVID-19-master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_"
+  path <- "COVID-19-master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_"
   unzip(
     zipfile   = "data/covid19_data.zip",
-    files     = paste0(data_path, c("confirmed_global.csv", "deaths_global.csv", "recovered_global.csv")),
+    files     = paste0(path, c("confirmed_global.csv", "deaths_global.csv", "recovered_global.csv")),
     exdir     = "data",
     junkpaths = T
   )
